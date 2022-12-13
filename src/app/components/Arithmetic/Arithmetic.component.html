@@ -1,0 +1,20 @@
+
+<table style="width:100%">
+    <tr> 
+<th><input type="text" #FirstNumber><br/></th>
+<th><input type="text" #SecondNumber><br/></th>
+</tr>
+</table>
+<table>
+<tr>
+<td><button (click)="AddNumber(FirstNumber.value,SecondNumber.value)"><b> + </b></button></td>
+<td><button (click)="SubNumber(FirstNumber.value,SecondNumber.value)"><b> - </b></button></td>
+<td><button (click)="MulNumber(FirstNumber.value,SecondNumber.value)"><b> * </b></button></td>
+<td><button (click)="DivNumber(FirstNumber.value,SecondNumber.value)"><b> / </b></button></td>
+</tr>
+</table>
+<table>
+<tr>
+<th>Result :{{result}}</th>
+</tr>
+</table>
